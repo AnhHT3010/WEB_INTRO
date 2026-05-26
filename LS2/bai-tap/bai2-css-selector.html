@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 2: CSS Selector</title>
+  <!-- 
+    ╔══════════════════════════════════════════════════════╗
+    ║  BÀI TẬP 2: INLINE CSS, INTERNAL CSS & SELECTOR    ║
+    ╚══════════════════════════════════════════════════════╝
+
+    YÊU CẦU: Trang bên dưới là một "Menu Nhà Hàng" chưa có style.
+    Hãy thêm CSS để trang trông đẹp hơn theo hướng dẫn.
+    
+    📌 Nhiệm vụ:
+
+    PHẦN A - Internal CSS (viết trong thẻ <style> bên dưới):
+    1. Universal Selector (*): Reset margin và padding về 0, set box-sizing: border-box
+    2. Element Selector (body): set font-family: Arial, sans-serif và background-color: #f5f5f5
+    3. Element Selector (h1): set color: #2c3e50, text-align: center, font-size: 36px
+    4. Element Selector (h2): set color: #e74c3c, font-size: 24px
+    5. Element Selector (p): set font-size: 16px, line-height: 1.6, color: #333
+    6. ID Selector (#restaurant-name): set text-transform: uppercase, letter-spacing: 3px
+    7. ID Selector (#special-dish): set color: #e67e22, font-weight: bold, font-size: 20px
+    8. Element Selector (hr): set border: none, border-top: 2px dashed #bdc3c7
+    
+    PHẦN B - Inline CSS:
+    9. Thêm inline style cho span class="price" đầu tiên: color: #27ae60, font-weight: bold
+    10. Thêm inline style cho span class="tag-hot": background-color: #e74c3c, color: white, padding: 2px 8px
+
+    ⚠️ KHÔNG thay đổi cấu trúc HTML, chỉ thêm CSS.
+  -->
+  <style>
+    /* === VIẾT INTERNAL CSS Ở ĐÂY === */
+    
+    /* TODO 1: Universal Selector - Reset margin, padding, box-sizing */
+
+    
+    /* TODO 2: Element Selector - Body */
+
+    
+    /* TODO 3: Element Selector - h1 */
+
+    
+    /* TODO 4: Element Selector - h2 */
+
+    
+    /* TODO 5: Element Selector - p */
+
+    
+    /* TODO 6: ID Selector - #restaurant-name */
+
+    
+    /* TODO 7: ID Selector - #special-dish */
+
+    
+    /* TODO 8: Element Selector - hr */
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="restaurant-name">Nhà Hàng Sài Gòn Xưa</h1>
+    <p>Ẩm thực truyền thống Việt Nam từ năm 1995</p>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>🍜 Món Khai Vị</h2>
+      <p>Gỏi cuốn tôm thịt - <span class="price">45.000đ</span></p>
+      <!-- TODO 9: Thêm inline style cho span.price ở trên -->
+      <p>Chả giò rế - <span class="price">55.000đ</span></p>
+      <p>Súp bào ngư - <span class="price">120.000đ</span></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>🥘 Món Chính</h2>
+      <p id="special-dish">
+        ⭐ Phở bò tái nạm gầu (Đặc biệt) - 85.000đ 
+        <span class="tag-hot">HOT</span>
+        <!-- TODO 10: Thêm inline style cho span.tag-hot ở trên -->
+      </p>
+      <p>Bún bò Huế - <span class="price">75.000đ</span></p>
+      <p>Cơm tấm sườn bì chả - <span class="price">65.000đ</span></p>
+      <p>Hủ tiếu Nam Vang - <span class="price">70.000đ</span></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>🍨 Tráng Miệng</h2>
+      <p>Chè ba màu - <span class="price">30.000đ</span></p>
+      <p>Bánh flan - <span class="price">25.000đ</span></p>
+      <p>Kem dừa - <span class="price">35.000đ</span></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>🥤 Thức Uống</h2>
+      <p>Cà phê sữa đá - <span class="price">29.000đ</span></p>
+      <p>Trà đào cam sả - <span class="price">39.000đ</span></p>
+      <p>Nước dừa tươi - <span class="price">35.000đ</span></p>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>📍 Địa chỉ: 456 Đường Lê Lợi, Quận 1, TP.HCM</p>
+    <p>📞 Hotline: 1900 1234</p>
+    <p>⏰ Giờ mở cửa: 7:00 - 22:00 hàng ngày</p>
+  </footer>
+
+</body>
+</html>

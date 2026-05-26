@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 1: Block, Inline & Semantic</title>
+  <!-- 
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  BÀI TẬP 1: BLOCK, INLINE, THẺ TIỆN DỤNG & SEMANTIC HTML  ║
+    ╚══════════════════════════════════════════════════════════════╝
+
+    YÊU CẦU: Hoàn thiện trang "Bài viết Khoa học" bên dưới.
+    
+    📌 Nhiệm vụ:
+    1. Sử dụng các thẻ semantic phù hợp (header, nav, main, article, footer)
+       thay cho các thẻ div có comment gợi ý.
+    2. Sử dụng <sup> và <sub> để hiển thị đúng các công thức hóa học và toán học.
+    3. Sử dụng <hr> để phân tách các phần nội dung.
+    4. Sử dụng <br> đúng chỗ (phần địa chỉ).
+    5. Sử dụng <div> và <span> đúng mục đích.
+    6. Sử dụng <figure> và <figcaption> cho phần hình ảnh.
+
+    ⚠️ KHÔNG được thay đổi nội dung text, chỉ thay đổi/thêm các thẻ HTML.
+  -->
+</head>
+<body>
+
+  <!-- TODO 1: Thay <div> bằng thẻ semantic phù hợp cho phần đầu trang -->
+  <div>
+    <h1>Tạp Chí Khoa Học Trẻ</h1>
+    
+    <!-- TODO 2: Thay <div> bằng thẻ semantic cho phần điều hướng -->
+    <div>
+      <a href="#home">Trang chủ</a> |
+      <a href="#physics">Vật lý</a> |
+      <a href="#chemistry">Hóa học</a> |
+      <a href="#math">Toán học</a>
+    </div>
+  </div>
+
+  <!-- TODO 3: Thay <div> bằng thẻ semantic cho phần nội dung chính -->
+  <div>
+
+    <!-- TODO 4: Thay <div> bằng thẻ semantic cho bài viết -->
+    <div>
+      <h2>Những Công Thức Thay Đổi Thế Giới</h2>
+      <p>Đăng bởi: <span>Nguyễn Văn A</span> | Ngày: 26/05/2026</p>
+
+      <!-- TODO 5: Thêm <hr> để phân tách phần giới thiệu với nội dung -->
+
+      <h3>1. Vật Lý - Thuyết Tương Đối</h3>
+      <p>
+        Công thức nổi tiếng nhất của Albert Einstein:
+        <!-- TODO 6: Dùng <sup> để hiển thị số mũ trong E = mc2 -->
+        E = mc2
+      </p>
+      <p>
+        Trong đó c là vận tốc ánh sáng, xấp xỉ 3 x 108 m/s.
+        <!-- TODO 7: Dùng <sup> cho số mũ 8 ở trên -->
+      </p>
+
+      <!-- TODO 8: Thêm <hr> để phân tách -->
+
+      <h3>2. Hóa Học - Phản Ứng Quang Hợp</h3>
+      <p>
+        Phương trình quang hợp:
+        <!-- TODO 9: Dùng <sub> để hiển thị đúng các chỉ số dưới -->
+        6CO2 + 6H2O → C6H12O6 + 6O2
+      </p>
+      <p>Nước (H2O) và Carbon dioxide (CO2) là hai chất tham gia chính.</p>
+      <!-- TODO 10: Dùng <sub> cho các số trong công thức hóa học ở trên -->
+
+      <!-- TODO 11: Thêm <hr> để phân tách -->
+
+      <h3>3. Toán Học - Định lý Pythagoras</h3>
+      <p>
+        <!-- TODO 12: Dùng <sup> để hiển thị số mũ -->
+        a2 + b2 = c2
+      </p>
+
+      <!-- TODO 13: Bọc hình ảnh trong <figure> và thêm <figcaption> -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pythagorean.svg/260px-Pythagorean.svg.png" 
+           alt="Minh họa định lý Pythagoras">
+      <!-- Thêm figcaption: "Hình minh họa định lý Pythagoras" -->
+
+    </div>
+    <!-- Kết thúc bài viết -->
+
+    <!-- TODO 14: Thay <div> bằng thẻ semantic phù hợp cho sidebar -->
+    <div>
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="#">Lịch sử phát minh bóng đèn</a></li>
+        <li><a href="#">Newton và quả táo</a></li>
+        <li><a href="#">Bảng tuần hoàn nguyên tố</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- Kết thúc nội dung chính -->
+
+  <!-- TODO 15: Thay <div> bằng thẻ semantic cho phần chân trang -->
+  <div>
+    <p>Liên hệ tòa soạn:</p>
+    <!-- TODO 16: Dùng <br> để tách các dòng địa chỉ -->
+    <p>Tạp Chí Khoa Học Trẻ 123 Đường Nguyễn Huệ Quận 1, TP.HCM Email: info@khoahoctre.vn</p>
+    <p>© 2026 Tạp Chí Khoa Học Trẻ. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 3: Box Model</title>
+  <!-- 
+    ╔════════════════════════════════════════════════════════╗
+    ║  BÀI TẬP 3: BOX MODEL - WIDTH, HEIGHT, BORDER,       ║
+    ║  BORDER-RADIUS, PADDING, MARGIN, DISPLAY              ║
+    ╚════════════════════════════════════════════════════════╝
+
+    YÊU CẦU: Hoàn thiện CSS cho trang "Hồ Sơ Cá Nhân" (Profile Card).
+    
+    📌 Nhiệm vụ - Viết CSS trong thẻ <style>:
+
+    1. Universal (*): margin: 0, padding: 0, box-sizing: border-box
+    2. body: background-color: #ecf0f1, font-family: Arial, sans-serif,
+             display: flex (không cần hiểu flex, chỉ cần thêm vào),
+             justify-content: center, align-items: center, min-height: 100vh
+    3. #profile-card:
+       - width: 350px
+       - background-color: white
+       - border: 1px solid #ddd
+       - border-radius: 16px
+       - padding: 30px
+       - margin: 20px (*)
+    4. #avatar:
+       - width: 120px, height: 120px
+       - border-radius: 50% (tạo hình tròn)
+       - border: 4px solid #3498db
+       - display: block
+       - margin: 0 auto 20px auto (căn giữa + margin dưới 20px)
+    5. #user-name:
+       - font-size: 24px, color: #2c3e50
+       - text-align: center
+       - margin-bottom: 5px
+    6. #user-title:
+       - font-size: 14px, color: #7f8c8d
+       - text-align: center
+       - margin-bottom: 20px
+    7. .info-item:
+       - padding: 12px 0
+       - border-bottom: 1px solid #eee
+       - font-size: 14px, color: #555
+    8. .info-label:
+       - display: inline-block
+       - width: 80px
+       - font-weight: bold
+       - color: #2c3e50
+    9. .btn:
+       - display: block
+       - width: 100%
+       - padding: 12px
+       - margin-top: 20px
+       - background-color: #3498db
+       - color: white
+       - border: none
+       - border-radius: 8px
+       - font-size: 16px
+       - text-align: center
+       - text-decoration: none
+    
+    💡 GỢI Ý: 
+    - Chú ý sự khác nhau giữa display: block, inline, inline-block
+    - Dùng margin: 0 auto để căn giữa phần tử block
+    - border-radius: 50% tạo hình tròn khi width = height
+  -->
+  <style>
+    /* === VIẾT CSS Ở ĐÂY === */
+
+    /* TODO 1: Universal Selector */
+
+    
+    /* TODO 2: body */
+
+    
+    /* TODO 3: #profile-card */
+
+    
+    /* TODO 4: #avatar */
+
+    
+    /* TODO 5: #user-name */
+
+    
+    /* TODO 6: #user-title */
+
+    
+    /* TODO 7: .info-item */
+
+    
+    /* TODO 8: .info-label */
+
+    
+    /* TODO 9: .btn */
+
+  </style>
+</head>
+<body>
+
+  <div id="profile-card">
+
+    <img id="avatar" 
+         src="https://i.pravatar.cc/300?img=11" 
+         alt="Avatar">
+
+    <h2 id="user-name">Nguyễn Minh Nam</h2>
+    <p id="user-title">Frontend Developer</p>
+
+    <div class="info-item">
+      <span class="info-label">Email:</span>
+      <span>nam.nguyen@email.com</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Phone:</span>
+      <span>0901 234 567</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Location:</span>
+      <span>TP. Hồ Chí Minh</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">GitHub:</span>
+      <span>github.com/minhnam</span>
+    </div>
+
+    <a href="#" class="btn">Liên Hệ</a>
+
+  </div>
+
+</body>
+</html>
