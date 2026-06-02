@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 3: Card Layout & Flex Item</title>
+  <!--
+    ╔════════════════════════════════════════════════════════╗
+    ║  BÀI TẬP 3: LAYOUT TRANG VỚI FLEX ITEM                ║
+    ║  (flex-wrap, flex: grow/shrink/basis, sidebar)        ║
+    ╚════════════════════════════════════════════════════════╝
+
+    YÊU CẦU: Tạo layout một trang web gồm:
+    - Hàng thẻ sản phẩm TỰ XUỐNG DÒNG khi màn hình hẹp.
+    - Phần thân chia 2 cột: sidebar cố định + nội dung co giãn.
+
+    📌 Nhiệm vụ - Viết CSS trong thẻ <style>:
+
+    1. Universal (*): margin: 0, padding: 0, box-sizing: border-box
+    2. body: font-family: Arial, sans-serif; padding: 20px; background: #ecf0f1
+
+    --- PHẦN A: Hàng thẻ tự wrap ---
+    3. .cards (CONTAINER):
+       - display: flex
+       - flex-wrap: wrap          (cho phép xuống dòng)
+       - gap: 16px
+       - margin-bottom: 30px
+    4. .card (ITEM):
+       - flex: 1 1 250px          (cơ sở 250px, được co & giãn → tự wrap)
+       - background-color: white
+       - border: 1px solid #ddd
+       - border-radius: 10px
+       - padding: 20px
+
+    --- PHẦN B: Sidebar layout ---
+    5. .layout (CONTAINER):
+       - display: flex
+       - gap: 20px
+    6. .sidebar (ITEM cố định):
+       - flex: 0 0 220px          (cố định 220px, KHÔNG co giãn)
+       - background-color: #2c3e50
+       - color: white
+       - padding: 20px
+       - border-radius: 10px
+    7. .main-content (ITEM co giãn):
+       - flex: 1                  (chiếm hết phần còn lại)
+       - background-color: white
+       - padding: 20px
+       - border-radius: 10px
+
+    💡 GỢI Ý:
+    - flex: 1 1 250px  → grow=1, shrink=1, basis=250px (thẻ co giãn & wrap).
+    - flex: 0 0 220px  → grow=0, shrink=0, basis=220px (cố định cứng).
+    - flex: 1          → chiếm toàn bộ khoảng trống còn lại.
+  -->
+  <style>
+    /* === VIẾT CSS Ở ĐÂY === */
+
+    /* TODO 1: Universal Selector */
+
+
+    /* TODO 2: body */
+
+
+    /* TODO 3: .cards - container wrap */
+
+
+    /* TODO 4: .card - flex item co giãn */
+
+
+    /* TODO 5: .layout - container */
+
+
+    /* TODO 6: .sidebar - cố định */
+
+
+    /* TODO 7: .main-content - co giãn */
+
+  </style>
+</head>
+<body>
+
+  <!-- PHẦN A: Hàng thẻ sản phẩm -->
+  <div class="cards">
+    <div class="card"><h3>Sản phẩm 1</h3><p>Mô tả ngắn về sản phẩm.</p></div>
+    <div class="card"><h3>Sản phẩm 2</h3><p>Mô tả ngắn về sản phẩm.</p></div>
+    <div class="card"><h3>Sản phẩm 3</h3><p>Mô tả ngắn về sản phẩm.</p></div>
+    <div class="card"><h3>Sản phẩm 4</h3><p>Mô tả ngắn về sản phẩm.</p></div>
+  </div>
+
+  <!-- PHẦN B: Sidebar layout -->
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Danh mục</h3>
+      <p>Mục 1</p>
+      <p>Mục 2</p>
+      <p>Mục 3</p>
+    </aside>
+    <main class="main-content">
+      <h2>Nội dung chính</h2>
+      <p>Phần này tự động chiếm hết khoảng trống còn lại bên cạnh sidebar.</p>
+    </main>
+  </div>
+
+</body>
+</html>

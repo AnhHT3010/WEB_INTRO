@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 2: Navbar bằng Flexbox</title>
+  <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  BÀI TẬP 2: THANH ĐIỀU HƯỚNG (NAVBAR) VỚI FLEXBOX  ║
+    ╚══════════════════════════════════════════════════════╝
+
+    YÊU CẦU: Tạo một thanh navbar hoàn chỉnh:
+    Logo nằm bên TRÁI, menu nằm bên PHẢI, tất cả căn giữa theo chiều dọc.
+
+    📌 Nhiệm vụ - Viết CSS trong thẻ <style>:
+
+    1. Universal (*): margin: 0, padding: 0, box-sizing: border-box
+    2. body: font-family: Arial, sans-serif
+
+    3. .navbar (CONTAINER ngoài cùng):
+       - display: flex
+       - justify-content: space-between   (đẩy logo & menu ra 2 đầu)
+       - align-items: center              (căn giữa theo chiều dọc)
+       - background-color: #2c3e50
+       - padding: 0 32px
+       - height: 64px
+
+    4. .logo:
+       - color: #1abc9c
+       - font-size: 24px
+       - font-weight: bold
+
+    5. .menu (CONTAINER chứa các link - cũng là flex):
+       - display: flex
+       - gap: 28px               (khoảng cách giữa các mục)
+       - align-items: center
+       - list-style: none
+
+    6. .menu a:
+       - color: white
+       - text-decoration: none
+       - font-size: 16px
+
+    7. .btn-signup (nút Đăng ký - item đặc biệt trong menu):
+       - background-color: #1abc9c
+       - color: white
+       - padding: 8px 16px
+       - border-radius: 6px
+
+    💡 GỢI Ý:
+    - .navbar dùng space-between để tách logo và menu.
+    - Bản thân .menu cũng là một flex container để các link nằm ngang.
+  -->
+  <style>
+    /* === VIẾT CSS Ở ĐÂY === */
+
+    /* TODO 1: Universal Selector */
+
+
+    /* TODO 2: body */
+
+
+    /* TODO 3: .navbar */
+
+
+    /* TODO 4: .logo */
+
+
+    /* TODO 5: .menu */
+
+
+    /* TODO 6: .menu a */
+
+
+    /* TODO 7: .btn-signup */
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">WeUp</div>
+    <ul class="menu">
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Khóa học</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Liên hệ</a></li>
+      <li><a href="#" class="btn-signup">Đăng ký</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

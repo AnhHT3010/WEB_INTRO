@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Flexbox - Bài 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Demo Flexbox trên lớp</h1>
+
+    <!-- 1. display: flex cơ bản (mặc định row) -->
+    <h2>1. display: flex (mặc định row)</h2>
+    <div class="container row">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- 2. justify-content: space-between -->
+    <h2>2. justify-content: space-between</h2>
+    <div class="container space-between">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- 3. Căn giữa hoàn hảo: justify-content + align-items -->
+    <h2>3. Căn giữa (justify-content + align-items)</h2>
+    <div class="container center-all">
+      <div class="box">Giữa</div>
+    </div>
+
+    <!-- 4. flex-direction: column -->
+    <h2>4. flex-direction: column</h2>
+    <div class="container column">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- 5. flex: 1 - chia đều các cột -->
+    <h2>5. flex: 1 (chia đều cột)</h2>
+    <div class="container row">
+      <div class="box grow">Cột co giãn</div>
+      <div class="box grow">Cột co giãn</div>
+      <div class="box grow">Cột co giãn</div>
+    </div>
+  </body>
+</html>

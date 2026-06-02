@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 1: Flexbox cơ bản</title>
+  <!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  BÀI TẬP 1: FLEX CONTAINER - DIRECTION, JUSTIFY, ALIGN, GAP  ║
+    ╚══════════════════════════════════════════════════════════════╝
+
+    YÊU CẦU: Dùng các thuộc tính của FLEX CONTAINER để bố cục trang.
+    Viết CSS trong thẻ <style> theo các TODO bên dưới.
+
+    📌 Nhiệm vụ:
+
+    1. Universal (*): margin: 0, padding: 0, box-sizing: border-box
+    2. body: font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5
+
+    3. .hero (CĂN GIỮA HOÀN HẢO 1 phần tử):
+       - display: flex
+       - justify-content: center   (giữa theo trục chính)
+       - align-items: center       (giữa theo trục phụ)
+       - height: 200px
+       - background-color: #2c3e50
+       - border-radius: 12px
+       - margin-bottom: 30px
+
+    4. .toolbar (thanh công cụ - đẩy 2 nhóm ra 2 đầu):
+       - display: flex
+       - justify-content: space-between
+       - align-items: center
+       - background-color: #3498db
+       - padding: 12px 20px
+       - border-radius: 8px
+       - margin-bottom: 30px
+
+    5. .gallery (hàng các thẻ, cách đều nhau):
+       - display: flex
+       - flex-direction: row
+       - gap: 16px
+
+    6. .stack (xếp DỌC các item):
+       - display: flex
+       - flex-direction: column
+       - gap: 10px
+       - margin-top: 30px
+
+    💡 GỢI Ý:
+    - justify-content căn theo TRỤC CHÍNH, align-items căn theo TRỤC PHỤ.
+    - Dùng gap thay cho margin để tạo khoảng cách giữa các item.
+  -->
+  <style>
+    /* === VIẾT CSS Ở ĐÂY === */
+
+    /* TODO 1: Universal Selector */
+
+
+    /* TODO 2: body */
+
+
+    /* TODO 3: .hero - căn giữa hoàn hảo */
+
+
+    /* TODO 4: .toolbar - space-between */
+
+
+    /* TODO 5: .gallery - hàng ngang, gap */
+
+
+    /* TODO 6: .stack - cột dọc, gap */
+
+  </style>
+</head>
+<body>
+
+  <!-- Căn giữa một phần tử -->
+  <div class="hero">
+    <h1 style="color: white;">Chào mừng đến Flexbox</h1>
+  </div>
+
+  <!-- Thanh công cụ -->
+  <div class="toolbar">
+    <span style="color: white; font-weight: bold;">LOGO</span>
+    <span style="color: white;">Đăng nhập</span>
+  </div>
+
+  <!-- Hàng các thẻ -->
+  <div class="gallery">
+    <div style="background:#e74c3c;color:#fff;padding:30px;border-radius:8px;">Ảnh 1</div>
+    <div style="background:#e67e22;color:#fff;padding:30px;border-radius:8px;">Ảnh 2</div>
+    <div style="background:#27ae60;color:#fff;padding:30px;border-radius:8px;">Ảnh 3</div>
+  </div>
+
+  <!-- Xếp dọc -->
+  <div class="stack">
+    <div style="background:#9b59b6;color:#fff;padding:16px;border-radius:8px;">Dòng 1</div>
+    <div style="background:#9b59b6;color:#fff;padding:16px;border-radius:8px;">Dòng 2</div>
+    <div style="background:#9b59b6;color:#fff;padding:16px;border-radius:8px;">Dòng 3</div>
+  </div>
+
+</body>
+</html>

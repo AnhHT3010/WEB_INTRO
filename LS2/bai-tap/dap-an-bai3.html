@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đáp án Bài tập 3: Box Model</title>
+  <style>
+    /* ✅ TODO 1: Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ✅ TODO 2: body */
+    body {
+      background-color: #ecf0f1;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* ✅ TODO 3: #profile-card */
+    #profile-card {
+      width: 350px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      padding: 30px;
+      margin: 20px;
+    }
+
+    /* ✅ TODO 4: #avatar */
+    #avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #3498db;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    /* ✅ TODO 5: #user-name */
+    #user-name {
+      font-size: 24px;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    /* ✅ TODO 6: #user-title */
+    #user-title {
+      font-size: 14px;
+      color: #7f8c8d;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* ✅ TODO 7: .info-item */
+    .info-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ✅ TODO 8: .info-label */
+    .info-label {
+      display: inline-block;
+      width: 80px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    /* ✅ TODO 9: .btn */
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="profile-card">
+
+    <img id="avatar" 
+         src="https://i.pravatar.cc/300?img=11" 
+         alt="Avatar">
+
+    <h2 id="user-name">Nguyễn Minh Nam</h2>
+    <p id="user-title">Frontend Developer</p>
+
+    <div class="info-item">
+      <span class="info-label">Email:</span>
+      <span>nam.nguyen@email.com</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Phone:</span>
+      <span>0901 234 567</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Location:</span>
+      <span>TP. Hồ Chí Minh</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">GitHub:</span>
+      <span>github.com/minhnam</span>
+    </div>
+
+    <a href="#" class="btn">Liên Hệ</a>
+
+  </div>
+
+</body>
+</html>

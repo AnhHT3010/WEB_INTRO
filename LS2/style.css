@@ -1,0 +1,22 @@
+/* p {
+background-color: red;
+}
+span {
+background-color: green;
+} */
+p {
+  color: blue;
+}
+span {
+  color: red;
+}
+#price {
+  color: rgb(24, 180, 0);
+}
+
+.highlight {
+  color: gray;
+  background-color: yellow;
+  font-size: 24px;
+  font-style: italic;
+}

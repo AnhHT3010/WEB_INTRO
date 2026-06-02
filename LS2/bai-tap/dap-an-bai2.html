@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đáp án Bài tập 2: CSS Selector</title>
+  <style>
+    /* ✅ TODO 1: Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ✅ TODO 2: Element Selector - Body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* ✅ TODO 3: Element Selector - h1 */
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      font-size: 36px;
+    }
+
+    /* ✅ TODO 4: Element Selector - h2 */
+    h2 {
+      color: #e74c3c;
+      font-size: 24px;
+    }
+
+    /* ✅ TODO 5: Element Selector - p */
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* ✅ TODO 6: ID Selector - #restaurant-name */
+    #restaurant-name {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    /* ✅ TODO 7: ID Selector - #special-dish */
+    #special-dish {
+      color: #e67e22;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    /* ✅ TODO 8: Element Selector - hr */
+    hr {
+      border: none;
+      border-top: 2px dashed #bdc3c7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="restaurant-name">Nhà Hàng Sài Gòn Xưa</h1>
+    <p>Ẩm thực truyền thống Việt Nam từ năm 1995</p>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>🍜 Món Khai Vị</h2>
+      <!-- ✅ TODO 9: Inline style cho span.price -->
+      <p>Gỏi cuốn tôm thịt - <span class="price" style="color: #27ae60; font-weight: bold;">45.000đ</span></p>
+      <p>Chả giò rế - <span class="price">55.000đ</span></p>
+      <p>Súp bào ngư - <span class="price">120.000đ</span></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>🥘 Món Chính</h2>
+      <p id="special-dish">
+        ⭐ Phở bò tái nạm gầu (Đặc biệt) - 85.000đ 
+        <!-- ✅ TODO 10: Inline style cho span.tag-hot -->
+        <span class="tag-hot" style="background-color: #e74c3c; color: white; padding: 2px 8px;">HOT</span>
+      </p>
+      <p>Bún bò Huế - <span class="price">75.000đ</span></p>
+      <p>Cơm tấm sườn bì chả - <span class="price">65.000đ</span></p>
+      <p>Hủ tiếu Nam Vang - <span class="price">70.000đ</span></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>🍨 Tráng Miệng</h2>
+      <p>Chè ba màu - <span class="price">30.000đ</span></p>
+      <p>Bánh flan - <span class="price">25.000đ</span></p>
+      <p>Kem dừa - <span class="price">35.000đ</span></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>🥤 Thức Uống</h2>
+      <p>Cà phê sữa đá - <span class="price">29.000đ</span></p>
+      <p>Trà đào cam sả - <span class="price">39.000đ</span></p>
+      <p>Nước dừa tươi - <span class="price">35.000đ</span></p>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>📍 Địa chỉ: 456 Đường Lê Lợi, Quận 1, TP.HCM</p>
+    <p>📞 Hotline: 1900 1234</p>
+    <p>⏰ Giờ mở cửa: 7:00 - 22:00 hàng ngày</p>
+  </footer>
+
+</body>
+</html>
